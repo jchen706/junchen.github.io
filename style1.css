@@ -1,0 +1,154 @@
+body {
+    display: flex;
+    height: 100vh;
+    width: auto;
+    flex-direction: column;
+}
+
+.display-1:hover {
+    cursor: pointer;
+    color: white !important;
+}
+
+.nav-style{
+    background: rgb(71, 107, 107);
+}
+
+a:hover {
+  background-color: #f0f4f4!important;
+  color:  rgba(36, 70, 105, 0.74) !important;
+}
+a{
+    color: white !important;
+}
+
+
+.main {
+    width: 100vw;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: linear-gradient(
+     rgba(36, 70, 105, 0.74),
+     rgba(36, 70, 105, 0.74)
+    ), url("back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+
+}
+
+.display-1 {
+    color: white;
+    font-size: 7vh;
+    font-family: 'Aguafina Script', cursive;
+    height: inherit;
+    width: inherit;
+}
+
+
+#modalbtn {
+    -webkit-transition : border 200ms ease-out;
+   -moz-transition : border 200ms ease-out;
+   -o-transition : border 200ms ease-out;
+}
+#modalbtn:hover {
+  background-color: rgb(71, 107, 107) !important;
+  opacity: 0.8;
+  color: white !important;
+  border : 5px solid white;
+}
+
+
+
+#date {
+    color: blue;
+    text-align: center;
+}
+
+
+.modal-dialog {
+
+}
+
+
+.modal-content {
+    height: auto;
+    background-color:rgba(36, 70, 105, 0.74);
+    color:rgba(255, 255, 255, 0.85) !important;
+}
+
+.modal-header {
+
+}
+
+#intro-pic {
+text-align: center;
+}
+
+.intro-h{
+    text-align: center;
+}
+
+.intro-p{
+  text-indent: 2em;
+}
+
+#starsList {
+
+}
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+
+
+
+ul.no-bullets {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#starsList ul > li .ability-score {
+    float: right;
+}
+
+.glyphicon-star {
+  color:rgba(255, 255, 255, 0.5);
+}
+
+.half {
+    position:relative;
+}
+
+.half::after {
+    content:'';
+    position:absolute;
+    z-index:1;
+    background-color:rgba(36, 70, 105, 0.8);
+    width: 50%;
+    height: 100%;
+    left: 50%;
+}
+
+.unfilled {
+    position:relative;
+    color:rgba(255, 255, 255, 0.25);
+}
+
+
+
+
+.img-fluid {
+    border-radius: 50%;
+}
+
+footer {
+    margin-top: 0.5em;
+    background-color: rgb(71, 107, 107);
+    color: white !important;
+}

@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    background: rgb(71, 107, 107);
+}
+
+.page-header {
+    text-align: center;
+}
+
+.display-1 {
+    font-size: 7vh;
+    text-align: center;
+}
+
+.card {
+    max-width: 300px;
+    max-height: 300px;
+}
+.card-img-top {
+    max-width: 300px !important;
+    max-height: 300px !important;
+}
+
+#buttonhome {
+    border-radius: 0 !important;
+}
+
+.git-ignore{
+    background-color: white;
+    border-radius: 30%;
+    padding: 0.2em;
+    width: fit-content;
+}
+
+.container{
+    height: inherit;
+    align-items: center;
+}
+
+footer {
+    background: white;
+    text-align: center;
+}
