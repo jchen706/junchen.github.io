@@ -3,7 +3,7 @@ body {
     height: 100vh;
     width: 100%;
     flex-direction: column;
-    background: rgb(71, 107, 107);
+    background: rgba(71, 107, 107, 0.8);
 }
 
 .page-header {
@@ -33,6 +33,7 @@ body {
     border-radius: 30%;
     padding: 0.2em;
     width: fit-content;
+    max-width: 63px;
 }
 
 .container{

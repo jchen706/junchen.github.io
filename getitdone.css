@@ -1,0 +1,23 @@
+body {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        background: rgba(71, 107, 107, 0.8);
+}
+
+
+.carousel {
+
+  width:300px;
+  height:500px;
+}
+
+
+.slideshow {
+    float: left;
+
+}
+.summary {
+    float: left;
+}
