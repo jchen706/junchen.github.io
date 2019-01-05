@@ -3,7 +3,7 @@ body {
         height: 100vh;
         width: 100%;
         flex-direction: column;
-        background: rgba(71, 107, 107, 0.8);
+        background: rgba(71, 107, 107, 0.75);
 }
 
 
