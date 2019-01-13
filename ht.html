@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Shop on the Fly!">
+    <meta name="author" content="Jun Chen">
+
+
+
+    <title>Shopfly</title>
+
+
+    <!-- Latest compiled and minified CSS and Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://sdk.clarifai.com/js/clarifai-latest.js"></script>
+    <script src="javascript.js"></script>
+</head>
+
+<body>
+
+    <header class="page-header" style="text-align: center;">
+        <h1 class="display-4"><i>Shopfly</i></h1>
+        <p><i>Shop on the Fly</i></p>
+        <p><i>Project Date: 1/13/2019</i></p>
+        <p><a id="git" href="https://github.com/jchen706/ShopFly2.0"><i>Github Repository</i></p></a>
+        <a href="index.html"><button type="button" class="btn btn-small btn-light mx-auto">Home</button></a>
+        <a href="project.html"><button type="button" class="btn btn-small btn-light mx-auto">Portfolio</button></a>
+    </header>
+
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6 d-flex justify-content-center" style="height: fit-content;">
+                <div class="row">
+                    <div class="col-md-12 d-flex justify-content-center">
+
+                        <h3><i>Demo</i></h3>
+
+
+                    </div>
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <p>Upload an image to start the demo.</p>
+                    </div>
+                    <div class="col-md-12 d-flex justify-content-center mt-3">
+                        <img class="img-thumbnail img-fluid. max-width: 100%" id="output" />
+                    </div>
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <h5 class="mt-3" id="imageName">No Valid Image Uploaded.</h5>
+                    </div>
+                    <div class="input-group mb-3 mt-5">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Upload</span>
+                        </div>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" accept="image/*" name="image" id="file" onchange="encodeImageFileAsURL(this)" id="imageName">
+                            <label class="custom-file-label" for="file" id="imageName">Upload Image</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <div id="airesults">
+                        </div>
+                    </div>
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <div id="results">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-6" style="height: fit-content;">
+                <div class="tech">
+                    <p style="text-indent: 2em;"><b style="font-size:20px;">Shopfly</b> is an web application that utilizes image recognition to enhance shopping experiences. The original project utilized Django Framework, called from NCR's Ordering
+                        API, and processed payments with Authorize.NET. Technical setbacks occurred during that implementation with the inability to plug tensorflow into the application. Thus, the original capabilities included searching the NCR API
+                        with item identification umber and posting payment with Authorize.NET. The new version of Shopfly allows for an image upload which is sent to Clarifai's General Image Recognition Model for object identification. The object is
+                        searched on
+                        Ebay's Item Search for various brands with its prices.</p>
+                    <hr>
+                    <h4>Features Implemented</h4>
+                    <ul>
+                        <li>Clarifai</li>
+                        <li>Ebay API</li>
+                        <li>Image Recognition</li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="design">
+                    <a href="https://github.com/jchen706/ShopFly">
+                        <h4 id="git">Original Github Repository</h4>
+                    </a>
+                </div>
+                <hr>
+                <div class="future">
+                    <h4>Future Works</h4>
+                    <ul>
+                        <li>Video Recognition</li>
+                        <li>Payment Service</li>
+                        <li>Better Recognition Models</li>
+                        <li>Gamification of Shopping Experience</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+    </script>
+
+
+</body>
+
+</html>
