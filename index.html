@@ -1,299 +1,76 @@
-<!DOCTYPE html>
+<!DOCTYPE tml>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Just Figured Out My Life!">
-    <meta name="author" content="Jun Chen">
-    <title> Jun Chen </title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Welcome to Jun Chen's website!">
+  <meta name="author" content="Jun Chen">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+  <!-- <link id="favicon" rel="icon" href="favicon.ico"> -->
+  <!-- <link  id="favicon" rel="icon" type="image/png" href="jc.png" />
+  <link id="favicon" rel="icon" type="image/png" href="jc-32.png" /> -->
+  <title>Jun Chen</title>
 
+  <!-- Boostrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="style1.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Aguafina+Script" rel="stylesheet">
-    <script src="script1.js"></script>
-
-  </head>
-  <body>
-
-      <nav class="navbar navbar-default">
-    <div class="container-fluid nav-style">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#" style="color:white;">Welcome</a>
-      </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#" style="color:white;">Home<span class="sr-only">(current)</span></a></li>
-          <li><a href="project.html">Portfolio</a></li>
-          <li><a href="resume10.pdf">Résumé</a></li>
-        </ul>
-
-        <ul class="nav navbar-nav navbar-right">
-
-          <li><a href="https://linkedin.com/in/junchen12
-  ">Linkedin</a></li>
-          <li><a href="https://github.com/jchen706">Github</a></li>
-          <li><a href="mailto:jchen706@gatech.edu">Email</a></li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
+  <script src="https://kit.fontawesome.com/d720c6445a.js"></script>
 
 
-      <div class="container-fluid h-100 main">
+  <!-- Custom styles for this template -->
+  <link href="style.css" rel="stylesheet">
 
-          <div id = "name">
+</head>
 
-              <button type="button" class="btn btn-info btn-lg"  style="background-color:transparent" data-toggle="modal" id = "modalbtn" data-target="#myModal"> <h1 class="display-1" style="color:white;">Jun Chen</h1></button>
-
-
-             <!-- Modal -->
-             <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
-               <div class="modal-dialog modal-lg ">
-
-                 <!-- Modal content-->
-                 <div class="modal-content">
-
-
-                   <!-- <div class="modal-header">
-                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-                    <h1 class="modal-title">Profile</h1>
-
-                   </div> -->
-
-
-                   <div class="modal-body">
-
-                       <div class="row">
-                           <div class="col-md-3" id ="intro-pic">
-                               <img src="jun.jpg" class="img-fluid border border-warning rounded shadow-lg p-3 mb-5" alt="Responsive image">
-
-                               <h3>Jun Chen</h3>
-                               <h4>Developer</h4>
-                               <h5>Seeking Software Enginnering Internship for Summer of 2019</h5>
-                           </div>
-
-
-                           <div class="col-md-8">
-                               <h1 class="intro-h">Hello, I'm Jun!</h1>
-
-                               <p class="intro-p">I'm an undergraduate student studying Computer Science at Georgia Tech. In my spare time, I like experimenting with web and software development. I am training myself to become a full-stack developer. I am very interested in various financial markets from digital currency to Wall Street.</p>
-
-                                <p class="intro-p">One day, I hope to travel to every single country in the world. Currently, I have traveled to 25 states and 3 countries.</p>
-                               <hr></hr>
-
-                               <h3>Skills</h3>
-
-                               <div class="row">
-                                   <div class="col-lg-4 " id = "starsList">
-                                       <ul class="no-bullets">
-                                           <li>
-                                               <span class="ability-title">HTML</span>
-                                               <span class="ability-score">
-                                                   <span class="glyphicon glyphicon-star filled"></span>
-                                                   <span class="glyphicon glyphicon-star filled"></span>
-                                                   <span class="glyphicon glyphicon-star filled"></span>
-                                                   <span class="glyphicon glyphicon-star filled"></span>
-                                                   <span class="glyphicon glyphicon-star unfilled"></span>
-                                               </span>
-                                           </li>
-                                           <li>
-                                               <span class="ability-title">CSS</span>
-                                               <span class="ability-score">
-                                                   <span class="glyphicon glyphicon-star filled"></span>
-                                                   <span class="glyphicon glyphicon-star filled"></span>
-                                                   <span class="glyphicon glyphicon-star filled"></span>
-                                                   <span class="glyphicon glyphicon-star filled"></span>
-                                                   <span class="glyphicon glyphicon-star unfilled"></span>
-                                               </span>
-                                           </li>
-                                           <li>
-                                               <span class="ability-title">Java</span>
-                                               <span class="ability-score">
-                                                   <span class="glyphicon glyphicon-star filled"></span>
-                                                   <span class="glyphicon glyphicon-star filled"></span>
-                                                   <span class="glyphicon glyphicon-star filled"></span>
-                                                   <span class="glyphicon glyphicon-star filled"></span>
-                                                   <span class="glyphicon glyphicon-star unfilled"></span>
-
-
-                                               </span>
-                                           </li>
-                                           <li>
-                                               <span class="ability-title">Python</span>
-                                               <span class="ability-score">
-                                                   <span class="glyphicon glyphicon-star filled"></span>
-                                                   <span class="glyphicon glyphicon-star filled"></span>
-                                                   <span class="glyphicon glyphicon-star filled"></span>
-                                                   <span class="glyphicon
-                                                    glyphicon-star half"></span>
-                                                   <span class="glyphicon glyphicon-star unfilled"></span>
-                                               </span>
-                                           </li>
-                                           <li>
-                                               <span class="ability-title">JavaScript</span>
-                                               <span class="ability-score">
-                                                   <span class="glyphicon glyphicon-star filled"></span>
-                                                   <span class="glyphicon glyphicon-star filled"></span>
-                                                   <span class="glyphicon glyphicon-star filled"></span>
-                                                   <span class="glyphicon glyphicon-star unfilled"></span>
-                                                   <span class="glyphicon glyphicon-star unfilled"></span>
-                                               </span>
-                                           </li>
-                                        </ul>
-                                    </div>
-                                        <div class="col-lg-4" id="starsList">
-                                            <ul class="no-bullets">
-                                                <li>
-                                                    <span class="ability-title">Andriod</span>
-                                                    <span class="ability-score">
-                                                        <span class="glyphicon glyphicon-star filled"></span>
-                                                        <span class="glyphicon glyphicon-star filled"></span>
-                                                        <span class="glyphicon glyphicon-star filled"></span>
-                                                        <span class="glyphicon glyphicon-star unfilled"></span>
-                                                        <span class="glyphicon glyphicon-star unfilled"></span>
-                                                    </span>
-                                                </li>
-                                                <li>
-                                                    <span class="ability-title">Bootstrap</span>
-                                                    <span class="ability-score">
-                                                        <span class="glyphicon glyphicon-star filled"></span>
-                                                        <span class="glyphicon glyphicon-star filled"></span>
-                                                        <span class="glyphicon glyphicon-star filled"></span>
-                                                        <span class="glyphicon glyphicon-star unfilled"></span>
-                                                        <span class="glyphicon glyphicon-star unfilled"></span>
-                                                    </span>
-                                                </li>
-                                                <li>
-                                                    <span class="ability-title">C</span>
-                                                    <span class="ability-score">
-                                                        <span class="glyphicon glyphicon-star filled"></span>
-                                                        <span class="glyphicon glyphicon-star filled"></span>
-                                                        <span class="glyphicon glyphicon-star unfilled"></span>
-                                                        <span class="glyphicon glyphicon-star unfilled"></span>
-                                                        <span class="glyphicon glyphicon-star unfilled
-                                                        "></span>
-                                                    </span>
-                                                </li>
-                                                <li>
-                                                    <span class="ability-title">SQL</span>
-                                                    <span class="ability-score">
-                                                        <span class="glyphicon glyphicon-star filled"></span>
-                                                        <span class="glyphicon glyphicon-star filled"></span>
-                                                        <span class="glyphicon glyphicon-star unfilled"></span>
-                                                        <span class="glyphicon glyphicon-star unfilled"></span>
-                                                        <span class="glyphicon glyphicon-star unfilled
-                                                        "></span>
-                                                    </span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                </div>
-                               <hr></hr>
-                               <h3>Languages</h3>
-                               <div class="row">
-                                   <div class="col-md-4" id = "starsList">
-                                       <ul class="no-bullets">
-                                           <li>
-                                               <span class="ability-title">English</span>
-                                               <span class="ability-score">
-                                                   <span class="glyphicon glyphicon-star filled"></span>
-                                                   <span class="glyphicon glyphicon-star filled"></span>
-                                                   <span class="glyphicon glyphicon-star filled"></span>
-                                                   <span class="glyphicon glyphicon-star filled"></span>
-                                                   <span class="glyphicon glyphicon-star three-qua"></span>
-                                               </span>
-                                           </li>
-                                           <li>
-                                               <span class="ability-title">Mandarin</span>
-                                               <span class="ability-score">
-                                                   <span class="glyphicon glyphicon-star filled"></span>
-                                                   <span class="glyphicon glyphicon-star filled"></span>
-                                                   <span class="glyphicon glyphicon-star filled"></span>
-                                                   <span class="glyphicon glyphicon-star half"></span>
-                                                   <span class="glyphicon glyphicon-star unfilled"></span>
-
-
-                                               </span>
-                                           </li>
-                                           <li>
-                                               <span class="ability-title">Japanese</span>
-                                               <span class="ability-score">
-                                                   <span class="glyphicon glyphicon-star filled"></span>
-                                                   <span class="glyphicon glyphicon-star filled"></span>
-                                                   <span class="glyphicon glyphicon-star filled"></span>
-                                                   <span class="glyphicon
-
-                                                    glyphicon-star unfilled"></span>
-                                                   <span class="glyphicon glyphicon-star unfilled"></span>
-                                               </span>
-                                           </li>
-                                        </ul>
-                                   </div>
-
-                               </div>
-                           </div>
-                       </div>
-
-                   </div>
+<body class="text-center">
 
 
 
-                   <div class="modal-footer">
-                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                   </div>
-                 </div>
-
-               </div>
-             </div>
-
-
-
+  <div class="container-fluid d-flex h-100 p-3 mx-auto flex-column">
+    <nav class="navbar navbar-expand-sm navbar-light bg-none">
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav ml-auto">
+      </ul>
           </div>
-      </div>
-      <footer class="page-footer font-small">
-          <div class="date" style="color:white;"><p id="date" style="color:white;"></p></div>
-          <script class="text/javaScript">
-          function update(){
-              var currentDate = new Date();
-          document.getElementById("date").innerHTML = currentDate.toLocaleString();
-          setTimeout(update, 400);
-          }
-          update();
-          </script>
-      </footer>
-      <script>
-        function change() {
+    </nav>
+    <main role="main" class="inner cover">
 
-            document.getElementById("name").innerHTML = "Good Morning";
-
-        }
-      </script>
-      <script>
-        $(document).ready(function(){
-          $("#myBtn").click(function(){
-            $("#myModal").modal();
-          });
-        });
-        </script>
+        <img src="jun.jpg" class=" img-fluid mx-auto d-block rounded-circle" alt="Responsive image">
 
 
-    </body>
+      <h1 class="cover-heading">Jun Chen</h1>
+      <p class="lead">Developer & Explorer</p>
+      <h1>
+        <a href="www.linkedin.com/in/junchen12" style="color:black;"><i class="fab fa-linkedin icons"></i></a>
+        <a href="https://github.com/jchen706" style="color:black;"><i class="fab fa-github-square icons"></i></a>
+        <a href="mailto:jchen706@gatech.edu" style="color:black;"><i class="fas fa-envelope-square icons"></i></a>
+        <h1>
+          <p class="lead">
+            <a class="btn btn-light btn-outline-dark" href="cv.pdf">CV</a>
+          </p>
+    </main>
+
+    <footer class="mastfoot mt-auto mr-auto">
+      <div class="inner">
+  <p>&#169; Jun Chen</p>
+ </div>
+    </footer>
+  </div>
+
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+
+</body>
+
 </html>
